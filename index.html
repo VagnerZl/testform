@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" ,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello</h1>
+    <form class="form" action="">
+        <div>
+            <p class="form-header">For business enquiries please <br> use the form below</p>
+            <p class="form-req">*Required</p>
+        </div>
+
+        <div class="wrapper">
+        <label class="form-label" for="name">Name*
+        <input class="form-input" id="name" type="text" pattern="^[A-zА-яЁё]+$" title="Имя должно состоять только из букв." required>
+        </label>
+
+        <label class="form-label" for="company">Company*
+        <input class="form-input" id="company" type="text" required>
+        </label>
+
+        <label class="form-label" for="email">Email*
+        <input class="form-input" id="email"  type="text"
+        pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+        required>
+        </label>
+
+        <label class="form-label" for="phone">Phone
+        <input class="form-input" id="phone" type="tel"
+        pattern="\+?[0-9\s\-\(\)]+">
+        </label>
+       
+        <label class="form-label" for="subject">Subject
+        <input class="form-input" id="subject" type="text">
+        </label>
+
+        <label class="form-label" for="message">Message*
+        <textarea class="form-input" id="message" required></textarea>
+        </label>
+
+        <div>
+        <input type="checkbox" id="check" required>
+        <label class="check-label" for="check">I accept <a href="#"> Terms and Privacy Policy</a> </label>
+        </div>
+        </div>
+
+        <button class="sendbtn" type="submit">Send</button>
+    </form>
+</body>
+</html>
